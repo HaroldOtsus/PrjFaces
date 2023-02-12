@@ -29,6 +29,7 @@ Partial Class Form1
         Me.btnStar = New System.Windows.Forms.Button()
         Me.btnTeeth = New System.Windows.Forms.Button()
         Me.btnYell = New System.Windows.Forms.Button()
+        Me.btnPuhasta = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'UCtrlEmotion1
@@ -92,11 +93,21 @@ Partial Class Form1
         Me.btnYell.Text = "Yell"
         Me.btnYell.UseVisualStyleBackColor = True
         '
+        'btnPuhasta
+        '
+        Me.btnPuhasta.Location = New System.Drawing.Point(495, 398)
+        Me.btnPuhasta.Name = "btnPuhasta"
+        Me.btnPuhasta.Size = New System.Drawing.Size(75, 23)
+        Me.btnPuhasta.TabIndex = 7
+        Me.btnPuhasta.Text = "Puhasta"
+        Me.btnPuhasta.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnPuhasta)
         Me.Controls.Add(Me.btnYell)
         Me.Controls.Add(Me.btnTeeth)
         Me.Controls.Add(Me.btnStar)
@@ -117,4 +128,5 @@ Partial Class Form1
     Friend WithEvents btnStar As Button
     Friend WithEvents btnTeeth As Button
     Friend WithEvents btnYell As Button
+    Friend WithEvents btnPuhasta As Button
 End Class

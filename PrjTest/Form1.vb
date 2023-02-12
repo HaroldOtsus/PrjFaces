@@ -22,4 +22,8 @@
     Private Sub btnYell_Click(sender As Object, e As EventArgs) Handles btnYell.Click
         UCtrlEmotion1.setMood("yell")
     End Sub
+
+    Private Sub btnPuhasta_Click(sender As Object, e As EventArgs) Handles btnPuhasta.Click
+        UCtrlEmotion1.setMood("delete")
+    End Sub
 End Class
