@@ -20,7 +20,6 @@
             Case "yell"
                 Me.selectMood(5)
             Case "delete"
-                pbEmotion.Image.Dispose()
                 pbEmotion.Image = Nothing
             Case Else
                 Me.selectMood(0)

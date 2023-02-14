@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
         Me.btnConfused = New System.Windows.Forms.Button()
         Me.btnCool = New System.Windows.Forms.Button()
         Me.btnSmile = New System.Windows.Forms.Button()
@@ -30,14 +29,9 @@ Partial Class Form1
         Me.btnTeeth = New System.Windows.Forms.Button()
         Me.btnYell = New System.Windows.Forms.Button()
         Me.btnPuhasta = New System.Windows.Forms.Button()
+        Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
+        Me.UBulb1 = New PrjBulbAndSwitch.UBulb()
         Me.SuspendLayout()
-        '
-        'UCtrlEmotion1
-        '
-        Me.UCtrlEmotion1.Location = New System.Drawing.Point(25, 23)
-        Me.UCtrlEmotion1.Name = "UCtrlEmotion1"
-        Me.UCtrlEmotion1.Size = New System.Drawing.Size(231, 229)
-        Me.UCtrlEmotion1.TabIndex = 0
         '
         'btnConfused
         '
@@ -102,11 +96,26 @@ Partial Class Form1
         Me.btnPuhasta.Text = "Puhasta"
         Me.btnPuhasta.UseVisualStyleBackColor = True
         '
+        'UCtrlEmotion1
+        '
+        Me.UCtrlEmotion1.Location = New System.Drawing.Point(29, 26)
+        Me.UCtrlEmotion1.Name = "UCtrlEmotion1"
+        Me.UCtrlEmotion1.Size = New System.Drawing.Size(168, 168)
+        Me.UCtrlEmotion1.TabIndex = 0
+        '
+        'UBulb1
+        '
+        Me.UBulb1.Location = New System.Drawing.Point(576, 52)
+        Me.UBulb1.Name = "UBulb1"
+        Me.UBulb1.Size = New System.Drawing.Size(213, 369)
+        Me.UBulb1.TabIndex = 8
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.UBulb1)
         Me.Controls.Add(Me.btnPuhasta)
         Me.Controls.Add(Me.btnYell)
         Me.Controls.Add(Me.btnTeeth)
@@ -129,4 +138,5 @@ Partial Class Form1
     Friend WithEvents btnTeeth As Button
     Friend WithEvents btnYell As Button
     Friend WithEvents btnPuhasta As Button
+    Friend WithEvents UBulb1 As PrjBulbAndSwitch.UBulb
 End Class
