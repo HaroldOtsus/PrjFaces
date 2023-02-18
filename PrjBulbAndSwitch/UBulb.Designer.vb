@@ -32,9 +32,11 @@ Partial Class UBulb
         '
         'pbBulb
         '
-        Me.pbBulb.Location = New System.Drawing.Point(131, 113)
+        Me.pbBulb.Image = CType(resources.GetObject("pbBulb.Image"), System.Drawing.Image)
+        Me.pbBulb.InitialImage = CType(resources.GetObject("pbBulb.InitialImage"), System.Drawing.Image)
+        Me.pbBulb.Location = New System.Drawing.Point(0, 0)
         Me.pbBulb.Name = "pbBulb"
-        Me.pbBulb.Size = New System.Drawing.Size(143, 155)
+        Me.pbBulb.Size = New System.Drawing.Size(158, 256)
         Me.pbBulb.TabIndex = 1
         Me.pbBulb.TabStop = False
         '
@@ -59,7 +61,7 @@ Partial Class UBulb
         Me.Controls.Add(Me.pbBulb)
         Me.Controls.Add(Me.UCtrlEmotion1)
         Me.Name = "UBulb"
-        Me.Size = New System.Drawing.Size(401, 372)
+        Me.Size = New System.Drawing.Size(157, 257)
         CType(Me.pbBulb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

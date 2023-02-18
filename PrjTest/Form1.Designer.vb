@@ -30,6 +30,7 @@ Partial Class Form1
         Me.btnYell = New System.Windows.Forms.Button()
         Me.btnPuhasta = New System.Windows.Forms.Button()
         Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
+        Me.USwitch1 = New PrjSwitch.USwitch()
         Me.UBulb1 = New PrjBulbAndSwitch.UBulb()
         Me.SuspendLayout()
         '
@@ -98,24 +99,32 @@ Partial Class Form1
         '
         'UCtrlEmotion1
         '
-        Me.UCtrlEmotion1.Location = New System.Drawing.Point(29, 26)
+        Me.UCtrlEmotion1.Location = New System.Drawing.Point(12, 12)
         Me.UCtrlEmotion1.Name = "UCtrlEmotion1"
         Me.UCtrlEmotion1.Size = New System.Drawing.Size(168, 168)
         Me.UCtrlEmotion1.TabIndex = 0
         '
+        'USwitch1
+        '
+        Me.USwitch1.Location = New System.Drawing.Point(656, 360)
+        Me.USwitch1.Name = "USwitch1"
+        Me.USwitch1.Size = New System.Drawing.Size(125, 61)
+        Me.USwitch1.TabIndex = 8
+        '
         'UBulb1
         '
-        Me.UBulb1.Location = New System.Drawing.Point(576, 52)
+        Me.UBulb1.Location = New System.Drawing.Point(635, 56)
         Me.UBulb1.Name = "UBulb1"
-        Me.UBulb1.Size = New System.Drawing.Size(213, 369)
-        Me.UBulb1.TabIndex = 8
+        Me.UBulb1.Size = New System.Drawing.Size(157, 257)
+        Me.UBulb1.TabIndex = 9
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(827, 465)
         Me.Controls.Add(Me.UBulb1)
+        Me.Controls.Add(Me.USwitch1)
         Me.Controls.Add(Me.btnPuhasta)
         Me.Controls.Add(Me.btnYell)
         Me.Controls.Add(Me.btnTeeth)
@@ -138,5 +147,6 @@ Partial Class Form1
     Friend WithEvents btnTeeth As Button
     Friend WithEvents btnYell As Button
     Friend WithEvents btnPuhasta As Button
+    Friend WithEvents USwitch1 As PrjSwitch.USwitch
     Friend WithEvents UBulb1 As PrjBulbAndSwitch.UBulb
 End Class
