@@ -30,8 +30,8 @@ Partial Class Form1
         Me.btnYell = New System.Windows.Forms.Button()
         Me.btnPuhasta = New System.Windows.Forms.Button()
         Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
-        Me.USwitch1 = New PrjSwitch.USwitch()
         Me.UBulb1 = New PrjBulbAndSwitch.UBulb()
+        Me.USwitch1 = New PrjSwitch.USwitch()
         Me.SuspendLayout()
         '
         'btnConfused
@@ -104,19 +104,19 @@ Partial Class Form1
         Me.UCtrlEmotion1.Size = New System.Drawing.Size(168, 168)
         Me.UCtrlEmotion1.TabIndex = 0
         '
-        'USwitch1
-        '
-        Me.USwitch1.Location = New System.Drawing.Point(656, 360)
-        Me.USwitch1.Name = "USwitch1"
-        Me.USwitch1.Size = New System.Drawing.Size(125, 61)
-        Me.USwitch1.TabIndex = 8
-        '
         'UBulb1
         '
         Me.UBulb1.Location = New System.Drawing.Point(635, 56)
         Me.UBulb1.Name = "UBulb1"
         Me.UBulb1.Size = New System.Drawing.Size(157, 257)
         Me.UBulb1.TabIndex = 9
+        '
+        'USwitch1
+        '
+        Me.USwitch1.Location = New System.Drawing.Point(650, 363)
+        Me.USwitch1.Name = "USwitch1"
+        Me.USwitch1.Size = New System.Drawing.Size(111, 58)
+        Me.USwitch1.TabIndex = 8
         '
         'Form1
         '

@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports PrjSwitch
+
+Public Class Form1
     Private Sub btnConfused_Click(sender As Object, e As EventArgs) Handles btnConfused.Click
         UCtrlEmotion1.setMood("confused")
     End Sub
@@ -22,10 +24,15 @@
     Private Sub btnYell_Click(sender As Object, e As EventArgs) Handles btnYell.Click
         UCtrlEmotion1.setMood("yell")
     End Sub
-
     Private Sub btnPuhasta_Click(sender As Object, e As EventArgs) Handles btnPuhasta.Click
         UCtrlEmotion1.setMood("delete")
     End Sub
 
-
+    Private Sub USwitch1_Clicked() Handles USwitch1.Clicked
+        If USwitch1.currentState = 0 Then
+            UBulb1.setBulb(1)
+        ElseIf USwitch1.currentState = 1 Then
+            UBulb1.setBulb(0)
+        End If
+    End Sub
 End Class

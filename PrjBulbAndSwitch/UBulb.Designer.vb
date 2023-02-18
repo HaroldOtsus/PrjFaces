@@ -22,10 +22,9 @@ Partial Class UBulb
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UBulb))
         Me.pbBulb = New System.Windows.Forms.PictureBox()
-        Me.imgBulb = New System.Windows.Forms.ImageList(Me.components)
+        Me.imgBulb = New System.Windows.Forms.ImageList()
         Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
         CType(Me.pbBulb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -36,7 +35,7 @@ Partial Class UBulb
         Me.pbBulb.InitialImage = CType(resources.GetObject("pbBulb.InitialImage"), System.Drawing.Image)
         Me.pbBulb.Location = New System.Drawing.Point(0, 0)
         Me.pbBulb.Name = "pbBulb"
-        Me.pbBulb.Size = New System.Drawing.Size(158, 256)
+        Me.pbBulb.Size = New System.Drawing.Size(157, 257)
         Me.pbBulb.TabIndex = 1
         Me.pbBulb.TabStop = False
         '
