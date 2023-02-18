@@ -29,6 +29,7 @@ Public Class Form1
     End Sub
 
     Private Sub USwitch1_Clicked() Handles USwitch1.Clicked
+        'M22rab lambipirni oleku vastavalt nupu olekust
         If USwitch1.currentState = 0 Then
             UBulb1.setBulb(1)
         ElseIf USwitch1.currentState = 1 Then
